@@ -8,13 +8,13 @@ metadata:
 spec:
   image: {{image}}
   liveness:
-    path: "/isalive"
-    port: 8080
+    path: "/pam-cv-brukergenerator/internal/isAlive"
+    port: 9033
     initialDelay: 20
     timeout: 60
   readiness:
-    path: "/isready"
-    port: 8080
+    path: "/pam-cv-brukergenerator/internal/isReady"
+    port: 9033
     initialDelay: 20
     timeout: 60
   replicas:
