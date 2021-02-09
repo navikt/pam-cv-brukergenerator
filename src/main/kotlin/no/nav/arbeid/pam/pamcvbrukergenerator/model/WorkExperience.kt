@@ -6,6 +6,6 @@ data class WorkExperience(
     val employer: String,
     val jobTitle: String,
     val fromDate: ZonedDateTime,
-    val toDate: ZonedDateTime,
+    val toDate: ZonedDateTime?,
     val ongoing: Boolean
     )
